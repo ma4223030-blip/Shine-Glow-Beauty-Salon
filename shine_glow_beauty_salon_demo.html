@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine & Glow Beauty Salon, Chandigarh | Concept Website Demo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration for Brand Palette -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pearl: '#FAF6F0',
+                        blush: '#F7EBE8',
+                        beige: '#F3ECE1',
+                        gold: '#C5A059',
+                        goldDark: '#A6823F',
+                        charcoal: '#2D2926',
+                        softGray: '#76716B'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF6F0;
+            color: #2D2926;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-pearl text-charcoal antialiased selection:bg-blush selection:text-goldDark">
+
+    <!-- TOP CONCEPT BANNER -->
+    <div class="bg-charcoal text-pearl text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2 sticky top-0 z-50 shadow-sm">
+        <i data-lucide="info" class="w-4 h-4 text-gold shrink-0"></i>
+        <span>Concept Website — Sample Content for Shine & Glow Beauty Salon, Chandigarh (Subject to Owner Confirmation)</span>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-[37px] sm:top-[41px] z-40 bg-pearl/90 backdrop-blur-md border-b border-gold/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo / Wordmark -->
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-charcoal">Shine & Glow</span>
+                <span class="text-[10px] sm:text-xs uppercase tracking-widest text-gold font-semibold -mt-1">Beauty Salon • Chandigarh</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#home" class="hover:text-gold transition-colors">Home</a>
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-gold transition-colors">Our Work</a>
+                <a href="#concept" class="hover:text-gold transition-colors">About</a>
+                <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action CTA & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4">
+                <a href="#booking" class="hidden sm:inline-flex items-center justify-center bg-gold hover:bg-goldDark text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-300 shadow-md hover:shadow-lg">
+                    Book Enquiry
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden p-2 text-charcoal hover:text-gold focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-pearl border-b border-gold/20 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#home" class="block text-lg font-medium hover:text-gold transition-colors mobile-link">Home</a>
+            <a href="#services" class="block text-lg font-medium hover:text-gold transition-colors mobile-link">Services</a>
+            <a href="#gallery" class="block text-lg font-medium hover:text-gold transition-colors mobile-link">Our Work</a>
+            <a href="#concept" class="block text-lg font-medium hover:text-gold transition-colors mobile-link">About</a>
+            <a href="#contact" class="block text-lg font-medium hover:text-gold transition-colors mobile-link">Contact</a>
+            <div class="pt-4 border-t border-gold/20">
+                <a href="#booking" class="block text-center bg-gold text-white font-semibold py-3 rounded-full shadow mobile-link">
+                    Book Enquiry
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-gradient-to-br from-blush/40 via-pearl to-beige/60 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <!-- Decorative background elements -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blush/60 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-beige/80 border border-gold/30 px-4 py-1.5 rounded-full text-xs sm:text-sm font-medium tracking-wider text-goldDark uppercase">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-gold"></i>
+                    <span>Chandigarh's Premier Beauty Destination</span>
+                </div>
+                <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-charcoal leading-[1.1]">
+                    Your Moment <br><span class="italic text-gold">to Shine</span>
+                </h1>
+                <p class="text-base sm:text-lg text-softGray max-w-xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Step into an oasis of elegance and personalised care. Discover tailored hairstyling, luxury skincare, professional makeup, and rejuvenating treatments designed to elevate your natural radiance.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center bg-gold hover:bg-goldDark text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl group">
+                        <span>Explore Services</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#booking" class="w-full sm:w-auto inline-flex items-center justify-center bg-transparent hover:bg-beige/60 text-charcoal border border-charcoal/30 font-semibold px-8 py-4 rounded-full transition-all duration-300">
+                        Enquire Now
+                    </a>
+                </div>
+                <div class="pt-6 flex items-center justify-center lg:justify-start gap-8 text-xs sm:text-sm text-softGray border-t border-gold/20 max-w-md mx-auto lg:mx-0">
+                    <div>
+                        <span class="block font-serif text-xl font-bold text-charcoal">Sector 8 / 9</span>
+                        <span class="text-xs">Prime Chandigarh Location</span>
+                    </div>
+                    <div class="h-8 w-[1px] bg-gold/30"></div>
+                    <div>
+                        <span class="block font-serif text-xl font-bold text-charcoal">Personalised</span>
+                        <span class="text-xs">Expert Consultations</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Editorial Hero Image -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto max-w-md lg:max-w-none">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-gold to-blush rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5]">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800" 
+                             alt="Luxury Beauty Salon Interior & Styling" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://placehold.co/800x1000/F3ECE1/C5A059?text=Shine+%26+Glow+Salon'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE DISCOVERY GRID -->
+    <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs uppercase tracking-widest text-gold font-bold">Curated Treatments</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal">Our Signature Services</h2>
+                <p class="text-softGray text-sm sm:text-base">
+                    Explore our core service categories. All offerings and descriptions below are sample placeholders subject to owner confirmation and final menu customisation.
+                </p>
+                <div class="inline-block bg-blush text-goldDark text-xs font-semibold px-3 py-1 rounded-full border border-gold/20">
+                    Editable Category Grid • Subject to Owner Approval
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Makeup -->
+                <div class="group bg-pearl rounded-3xl p-8 border border-gold/20 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="sparkles" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Professional Makeup</h3>
+                        <p class="text-softGray text-sm leading-relaxed mb-6">
+                            Bridal, party, editorial, and airbrush makeup artistry crafted by expert professionals to enhance your natural beauty for special occasions.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-goldDark bg-beige/60 px-3 py-1 rounded-full">Custom Packages</span>
+                        <a href="#booking" class="text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Hair Styling -->
+                <div class="group bg-pearl rounded-3xl p-8 border border-gold/20 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="scissors" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Hair Styling & Care</h3>
+                        <p class="text-softGray text-sm leading-relaxed mb-6">
+                            Precision cuts, modern coloring techniques, global highlights, keratin treatments, and revitalizing hair spa therapies.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-goldDark bg-beige/60 px-3 py-1 rounded-full">Personalised Cut</span>
+                        <a href="#booking" class="text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Skincare -->
+                <div class="group bg-pearl rounded-3xl p-8 border border-gold/20 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="sun" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Advanced Skincare</h3>
+                        <p class="text-softGray text-sm leading-relaxed mb-6">
+                            Dermatology-backed skincare regimens, deep hydration rituals, anti-aging solutions, and bespoke glow treatments for all skin types.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-goldDark bg-beige/60 px-3 py-1 rounded-full">Skin Analysis</span>
+                        <a href="#booking" class="text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Facials -->
+                <div class="group bg-pearl rounded-3xl p-8 border border-gold/20 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="flower-2" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Luxury Facials</h3>
+                        <p class="text-softGray text-sm leading-relaxed mb-6">
+                            Rejuvenating facial treatments featuring premium international botanicals to cleanse, exfoliate, and restore luminous vitality.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-goldDark bg-beige/60 px-3 py-1 rounded-full">Signature Glow</span>
+                        <a href="#booking" class="text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 5: Beauty Treatments -->
+                <div class="group bg-pearl rounded-3xl p-8 border border-gold/20 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-blush flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="heart" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-3">Beauty Treatments</h3>
+                        <p class="text-softGray text-sm leading-relaxed mb-6">
+                            Comprehensive grooming essentials including manicures, pedicures, nail artistry, waxing, and eye contouring in a serene ambiance.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gold/10 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-goldDark bg-beige/60 px-3 py-1 rounded-full">Complete Care</span>
+                        <a href="#booking" class="text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Custom Consultation -->
+                <div class="group bg-gradient-to-br from-charcoal to-neutral-800 text-pearl rounded-3xl p-8 border border-gold/40 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/20 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="calendar-check" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white mb-3">Bespoke Packages</h3>
+                        <p class="text-neutral-300 text-sm leading-relaxed mb-6">
+                            Planning a wedding or major event? Let our specialists craft a custom day-of or pre-bridal pampering package tailored exclusively for you.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-neutral-700 flex items-center justify-between text-xs font-semibold">
+                        <span class="text-gold bg-gold/10 px-3 py-1 rounded-full">Book Consultation</span>
+                        <a href="#booking" class="text-white hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE GALLERY SECTION -->
+    <section id="gallery" class="py-24 px-4 sm:px-6 lg:px-8 bg-beige/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                <span class="text-xs uppercase tracking-widest text-gold font-bold">Visual Showcase</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal">Gallery & Aesthetics</h2>
+                <p class="text-softGray text-sm sm:text-base">
+                    Explore our illustrative sample gallery showcasing high-end beauty and salon artistry. 
+                    <span class="block text-xs italic text-goldDark mt-1">Note: Images are illustrative sample placeholders and do not represent falsely claimed salon work.</span>
+                </p>
+
+                <!-- Filter Buttons -->
+                <div id="gallery-filters" class="flex flex-wrap items-center justify-center gap-2 pt-6">
+                    <button data-filter="all" class="filter-btn px-6 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gold text-white transition-all shadow">All</button>
+                    <button data-filter="hair" class="filter-btn px-6 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-charcoal hover:bg-gold/10 border border-gold/30 transition-all">Hair</button>
+                    <button data-filter="makeup" class="filter-btn px-6 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-charcoal hover:bg-gold/10 border border-gold/30 transition-all">Makeup</button>
+                    <button data-filter="beauty" class="filter-btn px-6 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white text-charcoal hover:bg-gold/10 border border-gold/30 transition-all">Beauty</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item 1: Hair -->
+                <div data-category="hair" class="gallery-item group relative rounded-3xl overflow-hidden shadow-md aspect-[4/5] bg-white border border-gold/20">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800" 
+                         alt="Hair Styling Sample" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/800x1000/FAF6F0/C5A059?text=Hair+Styling'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs uppercase tracking-wider text-gold font-semibold">Hair Styling</span>
+                        <h4 class="font-serif text-xl font-bold">Precision Cut & Blowout</h4>
+                        <p class="text-xs text-neutral-300 mt-1">Illustrative sample work</p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Makeup -->
+                <div data-category="makeup" class="gallery-item group relative rounded-3xl overflow-hidden shadow-md aspect-[4/5] bg-white border border-gold/20">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800" 
+                         alt="Makeup Artistry Sample" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/800x1000/FAF6F0/C5A059?text=Makeup+Artistry'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs uppercase tracking-wider text-gold font-semibold">Makeup</span>
+                        <h4 class="font-serif text-xl font-bold">Editorial Glow & Glam</h4>
+                        <p class="text-xs text-neutral-300 mt-1">Illustrative sample work</p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Beauty -->
+                <div data-category="beauty" class="gallery-item group relative rounded-3xl overflow-hidden shadow-md aspect-[4/5] bg-white border border-gold/20">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80&w=800" 
+                         alt="Beauty Treatment Sample" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/800x1000/FAF6F0/C5A059?text=Skin+Care'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs uppercase tracking-wider text-gold font-semibold">Beauty</span>
+                        <h4 class="font-serif text-xl font-bold">Rejuvenating Skincare Ritual</h4>
+                        <p class="text-xs text-neutral-300 mt-1">Illustrative sample work</p>
+                    </div>
+                </div>
+
+                <!-- Item 4: Hair -->
+                <div data-category="hair" class="gallery-item group relative rounded-3xl overflow-hidden shadow-md aspect-[4/5] bg-white border border-gold/20">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=800" 
+                         alt="Hair Coloring Sample" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/800x1000/FAF6F0/C5A059?text=Hair+Coloring'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs uppercase tracking-wider text-gold font-semibold">Hair Styling</span>
+                        <h4 class="font-serif text-xl font-bold">Dimensional Balayage</h4>
+                        <p class="text-xs text-neutral-300 mt-1">Illustrative sample work</p>
+                    </div>
+                </div>
+
+                <!-- Item 5: Makeup -->
+                <div data-category="makeup" class="gallery-item group relative rounded-3xl overflow-hidden shadow-md aspect-[4/5] bg-white border border-gold/20">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800" 
+                         alt="Bridal Makeup Sample" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/800x1000/FAF6F0/C5A059?text=Bridal+Makeup'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs uppercase tracking-wider text-gold font-semibold">Makeup</span>
+                        <h4 class="font-serif text-xl font-bold">Bridal Perfection</h4>
+                        <p class="text-xs text-neutral-300 mt-1">Illustrative sample work</p>
+                    </div>
+                </div>
+
+                <!-- Item 6: Beauty -->
+                <div data-category="beauty" class="gallery-item group relative rounded-3xl overflow-hidden shadow-md aspect-[4/5] bg-white border border-gold/20">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=800" 
+                         alt="Spa & Facial Sample" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         onerror="this.src='https://placehold.co/800x1000/FAF6F0/C5A059?text=Spa+Experience'">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 text-white">
+                        <span class="text-xs uppercase tracking-wider text-gold font-semibold">Beauty</span>
+                        <h4 class="font-serif text-xl font-bold">Serene Sanctuary Experience</h4>
+                        <p class="text-xs text-neutral-300 mt-1">Illustrative sample work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YOUR BEAUTY, YOUR STYLE CONCEPT SECTION -->
+    <section id="concept" class="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="text-xs uppercase tracking-widest text-gold font-bold">Personalised Philosophy</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal leading-tight">Your Beauty, Your Style</h2>
+                <p class="text-softGray text-base leading-relaxed">
+                    At Shine & Glow, Chandigarh, we believe that true beauty stems from celebrating individuality. We reject cookie-cutter styling in favor of bespoke treatments tailored precisely to your unique features, lifestyle, and preferences.
+                </p>
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blush flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal">Tailored Consultations</h4>
+                            <p class="text-xs sm:text-sm text-softGray">Every service begins with a personal listening session to understand your exact aesthetic goals.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blush flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal">Premium Products & Hygiene</h4>
+                            <p class="text-xs sm:text-sm text-softGray">Strict adherence to hygiene protocols and use of world-class, trusted cosmetic and haircare brands.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 rounded-full bg-blush flex items-center justify-center text-gold shrink-0 mt-1">
+                            <i data-lucide="check" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal">Relaxing Chandigarh Ambiance</h4>
+                            <p class="text-xs sm:text-sm text-softGray">Unwind in a peaceful, sophisticated environment designed for absolute comfort and rejuvenation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-blush to-beige rounded-3xl -z-10 transform rotate-1"></div>
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=800" 
+                         alt="Salon Atmosphere" 
+                         class="w-full h-full object-cover"
+                         onerror="this.src='https://placehold.co/800x600/FAF6F0/C5A059?text=Shine+%26+Glow+Ambiance'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED OFFERS COMPONENT -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-pearl border-y border-gold/20">
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <span class="text-xs uppercase tracking-widest text-gold font-bold">Special Promotions</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Featured Seasonal Offers</h2>
+            <p class="text-softGray text-sm sm:text-base max-w-2xl mx-auto">
+                Discover our curated seasonal pampering packages. Pricing is currently disabled pending final owner confirmation and pricing structure approval.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6">
+                <!-- Offer 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-gold/30 shadow-md text-left flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-gold text-white text-[10px] uppercase font-bold tracking-widest px-4 py-1.5 rounded-bl-2xl">
+                        Seasonal Special
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">Bridal Glow Preview Package</h3>
+                        <p class="text-softGray text-sm mb-6">Complete skin prep facial, hair trial styling, and pre-bridal consultation session.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-gold/10">
+                        <span class="bg-blush text-goldDark text-xs font-bold px-4 py-2 rounded-full border border-gold/20">Available on Consultation</span>
+                        <a href="#booking" class="text-xs font-bold text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="bg-white rounded-3xl p-8 border border-gold/30 shadow-md text-left flex flex-col justify-between relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-gold text-white text-[10px] uppercase font-bold tracking-widest px-4 py-1.5 rounded-bl-2xl">
+                        Weekend Treat
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold text-charcoal mb-2">Weekend Hair Spa & Blowout</h3>
+                        <p class="text-softGray text-sm mb-6">Deep conditioning hair spa ritual paired with professional styling for weekend readiness.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-gold/10">
+                        <span class="bg-blush text-goldDark text-xs font-bold px-4 py-2 rounded-full border border-gold/20">Available on Consultation</span>
+                        <a href="#booking" class="text-xs font-bold text-charcoal hover:text-gold flex items-center gap-1">Enquire <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING ENQUIRY FORM SECTION -->
+    <section id="booking" class="py-24 px-4 sm:px-6 lg:px-8 bg-white relative">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+                <span class="text-xs uppercase tracking-widest text-gold font-bold">Appointment Scheduling</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-charcoal">Book Your Enquiry</h2>
+                <p class="text-softGray text-sm sm:text-base">
+                    Fill out the form below to request an appointment or consultation at our Chandigarh salon. We will contact you shortly to confirm timings.
+                </p>
+            </div>
+
+            <div class="bg-pearl rounded-3xl p-8 sm:p-12 border border-gold/30 shadow-xl relative">
+                <!-- Success State Overlay (Hidden by default) -->
+                <div id="form-success" class="hidden absolute inset-0 bg-pearl/95 backdrop-blur-md rounded-3xl z-20 flex flex-col items-center justify-center text-center p-8 space-y-4 animate-fade-in">
+                    <div class="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center">
+                        <i data-lucide="check-circle" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="font-serif text-3xl font-bold text-charcoal">Enquiry Received Successfully!</h3>
+                    <p class="text-softGray text-sm max-w-md">
+                        Thank you! Your booking enquiry has been recorded for Shine & Glow Beauty Salon, Chandigarh. Our team will get in touch with you shortly.
+                    </p>
+                    <button id="reset-form-btn" class="mt-4 bg-gold hover:bg-goldDark text-white font-semibold px-8 py-3 rounded-full text-sm transition-all shadow">
+                        Send Another Enquiry
+                    </button>
+                </div>
+
+                <form id="booking-form" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Full Name -->
+                        <div class="space-y-2">
+                            <label for="name" class="block text-xs uppercase tracking-wider font-bold text-charcoal">Your Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" required placeholder="e.g. Priya Sharma" 
+                                   class="w-full bg-white border border-gold/30 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="space-y-2">
+                            <label for="phone" class="block text-xs uppercase tracking-wider font-bold text-charcoal">Phone Number <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" required placeholder="e.g. +91 98765 43210" 
+                                   class="w-full bg-white border border-gold/30 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- Requested Service -->
+                        <div class="space-y-2">
+                            <label for="service" class="block text-xs uppercase tracking-wider font-bold text-charcoal">Requested Service <span class="text-red-500">*</span></label>
+                            <select id="service" required class="w-full bg-white border border-gold/30 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold transition-colors">
+                                <option value="" disabled selected>Select a service category</option>
+                                <option value="Professional Makeup">Professional Makeup</option>
+                                <option value="Hair Styling & Care">Hair Styling & Care</option>
+                                <option value="Advanced Skincare">Advanced Skincare</option>
+                                <option value="Luxury Facials">Luxury Facials</option>
+                                <option value="Beauty Treatments">Beauty Treatments</option>
+                                <option value="Bespoke Packages">Bespoke Packages / Consultation</option>
+                            </select>
+                        </div>
+
+                        <!-- Preferred Date -->
+                        <div class="space-y-2">
+                            <label for="date" class="block text-xs uppercase tracking-wider font-bold text-charcoal">Preferred Appointment Date <span class="text-red-500">*</span></label>
+                            <input type="date" id="date" required 
+                                   class="w-full bg-white border border-gold/30 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold transition-colors">
+                        </div>
+                    </div>
+
+                    <!-- Additional Notes -->
+                    <div class="space-y-2">
+                        <label for="notes" class="block text-xs uppercase tracking-wider font-bold text-charcoal">Additional Notes or Preferences (Optional)</label>
+                        <textarea id="notes" rows="3" placeholder="Tell us about any specific requests or timings..." 
+                                  class="w-full bg-white border border-gold/30 rounded-2xl px-4 py-3.5 text-sm focus:outline-none focus:border-gold transition-colors"></textarea>
+                    </div>
+
+                    <div class="pt-4 text-center">
+                        <button type="submit" class="w-full sm:w-auto bg-gold hover:bg-goldDark text-white font-semibold px-10 py-4 rounded-full transition-all shadow-lg hover:shadow-xl">
+                            Submit Booking Enquiry
+                        </button>
+                        <p class="text-[11px] text-softGray mt-3">By submitting this form, you are enquiring about sample demo bookings for Shine & Glow Beauty Salon, Chandigarh.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION, CONTACT & FAQ SECTION -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 bg-beige/30 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Contact & Location Info -->
+            <div class="space-y-8">
+                <div class="space-y-3">
+                    <span class="text-xs uppercase tracking-widest text-gold font-bold">Get in Touch</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-charcoal">Visit Our Chandigarh Studio</h2>
+                    <p class="text-softGray text-sm">
+                        Conveniently located in Chandigarh. Reach out to us for appointments, bridal consultations, or general inquiries.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-white border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal mb-1">Salon Address</h4>
+                            <p class="text-xs sm:text-sm text-softGray">SCO 00, Sector 8-C / Sector 9, Madhya Marg, Chandigarh, 160009 <span class="block text-[11px] text-goldDark italic mt-0.5">(Editable Chandigarh Address)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-white border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal mb-1">Telephone & WhatsApp</h4>
+                            <p class="text-xs sm:text-sm text-softGray">+91 98765 XXXXX <span class="block text-[11px] text-goldDark italic mt-0.5">(Placeholder Phone Number)</span></p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-white border border-gold/30 flex items-center justify-center text-gold shrink-0">
+                            <i data-lucide="clock" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal mb-1">Working Hours</h4>
+                            <p class="text-xs sm:text-sm text-softGray">Monday – Sunday: 10:00 AM – 8:00 PM <span class="block text-[11px] text-goldDark italic mt-0.5">(Open 7 Days a Week)</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="pt-4 border-t border-gold/20">
+                    <h4 class="font-bold text-charcoal text-sm mb-3">Connect on Social Media</h4>
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-colors shadow-sm">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-colors shadow-sm">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-white transition-colors shadow-sm">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="space-y-6">
+                <div class="space-y-2">
+                    <span class="text-xs uppercase tracking-widest text-gold font-bold">Common Inquiries</span>
+                    <h2 class="font-serif text-3xl font-bold text-charcoal">Frequently Asked Questions</h2>
+                    <p class="text-softGray text-sm">Editable sample answers for prospective customers.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white rounded-2xl border border-gold/20 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-5 font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                            <span class="text-sm sm:text-base">Do I need to book an appointment in advance?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gold transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-softGray leading-relaxed border-t border-gold/10 pt-3">
+                            While walk-ins are welcomed subject to availability, we highly recommend booking an appointment or enquiry in advance to secure your preferred time slot with our senior stylists.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="bg-white rounded-2xl border border-gold/20 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-5 font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                            <span class="text-sm sm:text-base">Are bridal makeup trials available?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gold transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-softGray leading-relaxed border-t border-gold/10 pt-3">
+                            Yes! We offer customized bridal makeup trials and consultations. You can request a bridal package enquiry directly through our booking form.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="bg-white rounded-2xl border border-gold/20 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-5 font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                            <span class="text-sm sm:text-base">What safety and hygiene standards are followed?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gold transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-softGray leading-relaxed border-t border-gold/10 pt-3">
+                            We maintain rigorous sanitation protocols, sterilizing all tools after each use and adhering to pristine cleanliness standards across all beauty stations.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="bg-white rounded-2xl border border-gold/20 overflow-hidden shadow-sm">
+                        <button class="faq-toggle w-full text-left p-5 font-bold text-charcoal flex justify-between items-center focus:outline-none">
+                            <span class="text-sm sm:text-base">What payment methods are accepted?</span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-gold transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-softGray leading-relaxed border-t border-gold/10 pt-3">
+                            We accept all major credit cards, UPI, digital wallets, and cash payments at our Chandigarh salon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-charcoal text-pearl py-12 px-4 sm:px-6 lg:px-8 border-t border-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif text-2xl font-bold tracking-wider text-white">Shine & Glow</span>
+                <p class="text-xs text-neutral-400 mt-1">Beauty Salon • Chandigarh • Concept Demo Website</p>
+            </div>
+            <div class="text-xs text-neutral-400 max-w-md">
+                <p>Concept Website — Sample Content. All trademarks, service offerings, and pricing are subject to final owner confirmation upon approval.</p>
+            </div>
+            <div class="text-xs text-gold">
+                &copy; 2026 Shine & Glow Beauty Salon. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- PERSISTENT MOBILE WHATSAPP ENQUIRY BUTTON -->
+    <a href="#booking" class="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group" aria-label="WhatsApp Enquiry">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold pl-0 group-hover:pl-2">Enquire Now</span>
+    </a>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Gallery Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button styles
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-gold', 'text-white', 'shadow');
+                    b.classList.add('bg-white', 'text-charcoal', 'border', 'border-gold/30');
+                });
+                btn.classList.remove('bg-white', 'text-charcoal', 'border', 'border-gold/30');
+                btn.classList.add('bg-gold', 'text-white', 'shadow');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ Accordion Logic
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('i');
+
+                // Toggle current
+                content.classList.toggle('hidden');
+                icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+
+        // Booking Form Submission Handling with Success State
+        const bookingForm = document.getElementById('booking-form');
+        const formSuccess = document.getElementById('form-success');
+        const resetFormBtn = document.getElementById('reset-form-btn');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Show success overlay
+            formSuccess.classList.remove('hidden');
+        });
+
+        resetFormBtn.addEventListener('click', () => {
+            bookingForm.reset();
+            formSuccess.classList.add('hidden');
+        });
+
+        // Set minimum date for booking input to today
+        const dateInput = document.getElementById('date');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        }
+    </script>
+</body>
+</html>
